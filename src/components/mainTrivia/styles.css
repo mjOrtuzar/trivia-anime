@@ -1,4 +1,18 @@
-.button{
+* {
+    padding: 0;
+    margin: 0;
+    max-width: 100vh;
+}
+
+body {
+    background-image: url('./question_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: white;
+}
+
+.button {
     text-align: center;
-    margin: auto;
+    /* margin: auto; */
 }
