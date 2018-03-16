@@ -1,25 +1,27 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import AppBar from 'material-ui/AppBar';
 import PlayButton from './components/mainTrivia';
+import Logo from './components/mainTrivia/Logo.png';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
+
       <MuiThemeProvider>
         <Row>
-          <Col xs={12} md={6} >
-          <AppBar title={'esto funciono :D'}/>
+          <Col xs={12} md={12}>
+          <h2>Prueba tus conocimientos ñoños con...</h2>
           </Col>
         </Row>
         <Row>
-          <Col>
-            
+          <Col xs={12} md={12}>
+            <img src={Logo} className="logo" alt="logo"/>
           </Col>
         </Row>
         <Row>
-          <Col xs ={12}>
+          <Col xs={12} md={12}>
             <PlayButton/>
           </Col>
         </Row>
